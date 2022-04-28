@@ -1,0 +1,58 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFF2DD;
+}
+
+audio{
+    position: absolute;
+    z-index: 1;
+    top:30px;
+    left: 30px;
+}
+
+video{
+    position: absolute;
+    min-width: 100%;
+    z-index:-1;
+    top:-10%;
+}
+    
+    .panorama{
+        height:100%;
+        z-index: -1;
+    }
+
+    .overlap{
+        position: absolute;
+        z-index: 1; 
+        max-width: 25%;
+    }
+
+    .star{
+        position: absolute;
+        z-index: 1; 
+        max-width: 5%;
+    }
+
+@media only screen and (max-width: 1200px) {
+    .overlap{
+        position: absolute;
+        z-index: 1; 
+        max-width:75%;
+    }
+    
+    .panorama{
+        z-index: -1; 
+        height:100%;
+    }
+    
+    .star{
+        position: absolute;
+        z-index: 1; 
+        max-width: 15%;
+    }
+    
+    audio{
+        max-width: 50%;
+    }
+}
